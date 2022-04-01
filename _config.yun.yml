@@ -1,0 +1,296 @@
+#亮暗模式  可选 light | dark | auto | time
+mode: auto
+# 首页的垂直交错排列文字效果
+banner:
+  #是否开启
+  enable: true
+  #设置文字内容
+  title: '爱阅渴的回忆录'
+  # 是否开启标语中字符的左右边框
+  border: true
+  # 在首页下方显示流动的云
+  cloud:
+    # 是否开启
+    enable: false
+    # 自定义色彩
+    color: "red"
+    #  向下箭头按钮（点击翻页）
+    go_down:
+      enable: true
+      icon: icon-arrow-down-s-line
+# 公告 显示在所有文章卡片的最上方，标语的下方。
+notice:
+  enable: false
+  content: '还没想好'
+# 头像
+avatar:
+  enable: true
+  url: /images/avatar.jpg
+  rounded: true
+  opacity: 1
+  mickey_mouse: false
+  # 头像边上的状态
+  status:
+    enable: false
+    emoji: 😭
+    message: 不想上班
+# 背景图
+bg_image:
+  enable: true
+  url: /blog.yuekelove/images/background.jpg
+  # dark:
+  # blur: 30px # 设置背景模糊程度
+  opacity: 0.8
+# 搜索框
+search:
+  modal: true
+  bg_image: /blog.yuekelove/images/background.jpg
+  #dark_bg_image: xxx
+  # placeholder:
+# 鼠标点击的烟花效果
+fireworks:
+  enable: true
+  colors:
+    # 蓝
+    - "158, 178, 203"
+    # 黄
+    - "230, 166, 8"
+    # 绿
+    - "138, 138, 43"
+# 首页卡片与文章内部图片的滚动浮现效果
+scrollreveal:
+  enable: false
+  targets:
+    - .post-card
+    - .markdown-body img
+# 替换鼠标光标，默认关闭
+cursor:
+  enable: false
+  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
+  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
+  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
+# 侧边栏 背景与标签
+#sidebar:
+#  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
+#  bg_position: bottom 3rem center
+#  tagcloud:
+#    enable: true
+#    amount: 20
+
+#reward:
+#  enable: true
+#  comment: 我很可爱，请给我钱
+#  methods:
+#    - name: 支付宝
+#      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+#      color: "#00A3EE"
+#      icon: icon-alipay-line
+#    - name: QQ 支付
+#      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
+#      color: "#12B7F5"
+#      icon: icon-qq-line
+#    - name: 微信支付
+#      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+#      color: "#2DC100"
+#      icon: icon-wechat-pay-line
+#
+#comment:
+#  candidates:
+#    - waline
+#    # - giscus
+#  tips:
+#    - 如果您有任何关于博客内容的相关讨论，欢迎前往 <a href="https://github.com/YunYouJun/yunyoujun.github.io/discussions" target="_blank">GitHub Discussions</a> 与我交流。
+#
+#waline:
+#  enable: true
+#  serverURL: https://waline.yunyoujun.cn
+#  visitor: true
+#  comment: true
+#  emoji:
+#    - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/bilibili/
+#    - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/weibo/
+#    - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/qq/
+#  locale:
+#    placeholder: 填写邮箱，可以收到回复通知哦～
+#  requiredMeta: ["nick"]
+#
+#github_issues:
+#  enable: false
+#
+#github_discussions:
+#  enable: false
+#
+#disqusjs:
+#  enable: false
+#  shortname: yunyoujun
+#  apikey: ouoGQCaamOKdJgyZU5DKcpFnRIg3SNzvk0nwygPtlcTRJuE68c8igvrZGW4wAJoN
+#
+## https://github.com/laymonage/giscus
+#giscus:
+#  enable: false
+#  repo: YunYouJun/yunyoujun.github.io
+#  repo-id:
+#  category-id:
+#  mapping: pathname
+#  reactions-enabled: 1
+#  emit-metadata: 0
+#  theme: light
+#
+#footer:
+#  since: 2016
+#  icon:
+#    url: https://sponsors.yunyoujun.cn
+#    title: 云游君的赞助者们
+#  beian:
+#    enable: true
+#    icp: 苏ICP备17038157号
+#  support:
+#    enable: true
+#    title: 又拍云
+#    link: https://www.upyun.com
+#    logo: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png
+#    prefix: 本网站由
+#    suffix: 提供 CDN 加速
+#  custom_text:
+#
+#engine_search:
+#  enable: false
+#
+## If you want to use it, you need config algolia appID in _config.yml!!!
+## https://github.com/oncletom/hexo-algolia
+#algolia_search:
+#  enable: true
+#  # ...
+#
+#google_analytics:
+#  enable: true
+#  id: G-1LL0D86CY9
+#
+#google_adsense:
+#  enable: true
+#  client: ca-pub-2245427233262012
+#
+#post_edit:
+#  enable: true
+#  url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
+#
+#albums:
+#  enable: true
+#
+#girls:
+#  enable: true
+#
+#tags:
+#  动画: crimson
+#  漫画: orange
+#  Parcel: "#21374b"
+#  学习: saddlebrown
+#  MAD: crimson
+#  教程: royalblue
+#  笔记: dimgray
+#  分享: "#0078e7"
+#  随笔: mediumpurple
+#  Blender: "#d04d2d"
+#  Linux: "#2577b1"
+#  中传: "#ccb44b"
+#  部落: "#DD306A"
+#  科幻: midnightblue
+#  蚂蚁森林: "#54a892"
+#
+#categories:
+#  云游的小视频: "#FB7299"
+#
+#pages:
+#  - name: 我的小伙伴们
+#    url: /links/
+#    icon: icon-genderless-line
+#    color: dodgerblue
+#  - name: 喜欢的女孩子
+#    url: /girls/
+#    icon: icon-women-line
+#    color: hotpink
+#
+#menu:
+#  custom:
+#    title: 留言板
+#    path: /about/#comment
+#    icon: icon-clipboard-line
+#
+#
+#baidu_push: true
+#
+#google_tagmanager:
+#  enable: true
+#  id: GTM-M9KWR9L
+#
+#wordcount:
+#  enable: true
+#
+#say:
+#  api: https://el-bot-api.vercel.app/api/words/young
+#  hitokoto:
+#    enable: false
+#
+#social:
+#  - name: RSS
+#    # set rss in your root config
+#    # https://github.com/hexojs/hexo-generator-feed
+#    link: /atom.xml # config.feed.path
+#    icon: icon-rss-line
+#    color: orange
+#  - name: QQ 群 1050458482
+#    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
+#    link: https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi
+#    icon: icon-qq-line
+#    color: "#12B7F5"
+#  - name: GitHub
+#    link: https://github.com/YunYouJun
+#    icon: icon-github-line
+#    color: "#6e5494"
+#  - name: 微博
+#    link: https://weibo.com/jizhideyunyoujun
+#    icon: icon-weibo-line
+#    color: "#E6162D"
+#  - name: 豆瓣
+#    link: https://www.douban.com/people/yunyoujun/
+#    icon: icon-douban-line
+#    color: "#007722"
+#  - name: 网易云音乐
+#    link: https://music.163.com/#/user/home?id=247102977
+#    icon: icon-netease-cloud-music-line
+#    color: "#C20C0C"
+#  - name: 知乎
+#    link: https://www.zhihu.com/people/yunyoujun/
+#    icon: icon-zhihu-line
+#    color: "#0084FF"
+#  - name: 哔哩哔哩
+#    link: https://space.bilibili.com/1579790
+#    icon: icon-bilibili-line
+#    color: "#FF8EB3"
+#  - name: 微信公众号
+#    link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
+#    icon: icon-wechat-2-line
+#    color: "#1AAD19"
+#  - name: Twitter
+#    link: https://twitter.com/YunYouJun
+#    icon: icon-twitter-line
+#    color: "#1da1f2"
+#  # - name: Telegram
+#  #   link: https://t.me/yunyoujun_group
+#  #   icon: icon-telegram-line
+#  #   color: "#0088CC"
+#  - name: Telegram Channel
+#    link: https://t.me/elpsycn
+#    # icon: icon-telegram-fill
+#    icon: icon-telegram-line
+#    color: "#0088CC"
+#  - name: E-Mail
+#    link: mailto:me@yunyoujun.cn
+#    icon: icon-mail-line
+#    color: "#8E71C1"
+#  - name: Travelling
+#    link: https://travellings.link
+#    icon: icon-train-line
+#    color: black
+# pjax:
+#   enable: true
